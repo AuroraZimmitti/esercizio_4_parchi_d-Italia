@@ -92,6 +92,7 @@ html, body{
 	display: flex;
 	margin: 44px;
 	align-items: center;
+	justify-content: center;
 }
 
 .segmento-1 > *{
@@ -104,6 +105,7 @@ html, body{
 	border-radius: 10px;
 	padding: 20px;
 	min-width: 220px;
+	max-width: 700px;
 }
 
 .introduzione > span{
@@ -118,8 +120,6 @@ html, body{
 
 .slogan{
 	font-size: 40px;
-    text-align: right;
-    white-space: pre-line;
 	color: #213A6C;
 	margin-top: 20px;
 }
@@ -183,6 +183,7 @@ html, body{
     height: 280px;
     border-radius: 20px;
     object-fit: cover;
+	align-self: flex-start;
 }
 
 .card-descrittiva > .card-descrizione{
@@ -247,6 +248,7 @@ a, .card > a:hover{
 	border-radius: 20px;
 	margin: 40px 20px;
 	padding: 20px;
+	max-width: 700px;
 }
 
 .descrizione > p, .descrizione-alt > p{
@@ -255,7 +257,7 @@ a, .card > a:hover{
 
 .descrizione > p{
 	color: #213A6C;
-	max-width: 470px;
+	max-width: 900px;
 	font-size: 34px;
 }
 
@@ -272,6 +274,7 @@ footer{
     flex-direction: column;
     justify-content: right;
     margin-top: 30px;
+	flex: 0 1 0;
 }
 
 footer > img{
@@ -287,7 +290,7 @@ footer > span{
 	margin: 0;
 }
 
-@media (min-width: 828px){
+@media (min-width: 600px){
 	.card-descrittiva{
 		flex-direction: row;
 		max-width: 1000px;
